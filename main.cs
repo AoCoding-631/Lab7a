@@ -3,7 +3,7 @@ using System;
 class MainClass {
 
       //define function
-    public static double IntegerPower()
+    public static double IntegerPower(3,4)
     {
       double percentage = 0.0;
     //write code here to calculate the charges
@@ -33,10 +33,10 @@ class MainClass {
       
       while(counter <= CalculateCharge)
       {
-        Console.WriteLine("Enter hours parked");
+        Console.WriteLine("Calculate Charge");
         CalculateCharge = Convert.ToInt32(Console.ReadLine());
 
-        IntegerPower();
+        nbrOfHours = IntegerPower(3,4);
 
         parking = CalculateCharge * nbrOfHours;
         
