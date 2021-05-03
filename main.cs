@@ -1,15 +1,14 @@
 using System;
+using System.Linq;
+
 
 class MainClass {
 
-      //define function
-    public static double IntegerPower(3,4)
-    {
+  //define function
+      public static int IntegerPower(3,4)
+      {
       double percentage = 0.0;
-    //write code here to calculate the charges
-
-      int CalculateCharge = DateTime.Today.Year;
-      double nbrOfHours = CalculateCharge - percentage;
+        //write code here to calculate the charges
 
       if (nbrOfHours <= 3)
         percentage = 2.00;
@@ -19,35 +18,37 @@ class MainClass {
         percentage = 0.50;
 
       return percentage;
+      }
     }
-    
-    public static void Main (string[] args) {
-
-      int CalculateCharge=0;
-      //double nbrOfHours =0.0;
-      double parking=0.0;
-      int counter = 1;    
-     
-        Console.WriteLine("Enter the hours parked");
-        double nbrOfHours = Convert.ToDouble(Console.ReadLine());
-      
-      while(counter <= CalculateCharge)
+    public static void Main (string[] args) 
       {
-        Console.WriteLine("Calculate Charge");
-        CalculateCharge = Convert.ToInt32(Console.ReadLine());
+       int counter = 1;  
+       double parking; 
 
+
+        while(counter <= CalculateCharge)
+      {
+        Console.WriteLine("Enter Charge");
+        int CalculateCharge = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Enter the hours parked");
+        double nbrOfHours = Convert.ToDouble(Console.ReadLine()); 
+
+
+       //CalculateCharge = DateTime.Today.Year;
+        //nbrOfHours = CalculateCharge - percentage;
+
+        Console.WriteLine("charge:" + CalculateCharge);
+        Console.WriteLine("hours parked:" + nbrOfHours);
+        
         nbrOfHours = IntegerPower(3,4);
 
         parking = CalculateCharge * nbrOfHours;
         
-        Console.WriteLine("Parking charge for this customer is " + CalculateCharge);
+        Console.WriteLine("Parking charge for this customer is " + totalCostumers);
         counter++;
-      }
+        }
 
-      Console.WriteLine("All done") ;
+        Console.WriteLine("All done") ;
     
-    }  
-
-
-
-  }
+      }
