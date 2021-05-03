@@ -35,8 +35,8 @@ class MainClass {
         double nbrOfHours = Convert.ToDouble(Console.ReadLine()); 
 
 
-       //CalculateCharge = DateTime.Today.Year;
-        //nbrOfHours = CalculateCharge - percentage;
+        CalculateCharge = DateTime.Today.Year;
+        nbrOfHours = CalculateCharge - percentage;
 
         Console.WriteLine("charge:" + CalculateCharge);
         Console.WriteLine("hours parked:" + nbrOfHours);
